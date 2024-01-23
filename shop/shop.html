@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>shop 페이지</title>
-                <meta charset="utf-8">
-        </head>
-        <body>
-        <p><a href="../index.html">SHOP 페이지</a></p>
-        </body>
+
+<head>
+    <title>Shop 페이지</title>
+    <meta charset="utf-8">
+    <script>
+        function changeTitle() {
+            var titles = ["쇼핑 놀이터", "재밌는 상품들", "행복한 쇼핑", "웃음 가득한 쇼핑"];
+            var randomIndex = Math.floor(Math.random() * titles.length);
+            document.title = titles[randomIndex];
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="pageTitle">SHOP 페이지</h1>
+    <p><a href="javascript:void(0);" onclick="changeTitle()">페이지 제목 변경하기</a></p>
+</body>
+
 </html>
 
